@@ -1,4 +1,4 @@
-/* --- Day 1: Sonar Sweep ---
+""" --- Day 1: Sonar Sweep ---
 
 You're minding your own business on a ship at sea when the overboard alarm goes off! You rush to see if you can help. Apparently, one of the Elves tripped and accidentally sent the sleigh keys flying into the ocean!
 
@@ -42,10 +42,31 @@ To do this, count the number of times a depth measurement increases from the pre
 
 In this example, there are 7 measurements that are larger than the previous measurement.
 
-How many measurements are larger than the previous measurement? */
+How many measurements are larger than the previous measurement? """
 
-    function add(a, b) 
-    {
-        return a+b
-    }
-    console.log(add(4, 6))
+
+def importFile():
+    file = open("input")
+    fileLines_string = file.readlines()
+
+    output = []
+    for line in fileLines_string:
+        output.append(int(line))
+
+    # print(output)
+    return output
+
+
+def countIncrements(lines):
+    previousValue = lines[0]
+    incrementCount = 0
+    i = 0
+    for i in range(len(lines)):
+        if lines[i] > previousValue:
+            incrementCount += 1
+        previousValue = lines[i]
+
+    return incrementCount
+
+
+print(countIncrements(importFile()))
