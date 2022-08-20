@@ -38,7 +38,7 @@ Use the binary numbers in your diagnostic report to calculate the gamma rate and
 
 
 def ImportFile():
-    file = open("Day3/Day3Input")
+    file = open("Day3/input.txt")
     fileLines_string = file.readlines()
 
     output = []

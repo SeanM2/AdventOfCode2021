@@ -36,7 +36,7 @@
 
 
 def importFile():
-    file = open("input")
+    file = open("Day1/input.txt")
     fileLines_string = file.readlines()
 
     output = []

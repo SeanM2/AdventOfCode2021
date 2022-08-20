@@ -46,7 +46,7 @@ How many measurements are larger than the previous measurement? """
 
 
 def importFile():
-    file = open("input")
+    file = open("Day1/input.txt")
     fileLines_string = file.readlines()
 
     output = []

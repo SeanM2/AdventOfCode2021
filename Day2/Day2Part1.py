@@ -38,7 +38,7 @@ horizontal position by your final depth?
 
 
 def ImportFile():
-    file = open("Day2Input")
+    file = open("Day2/input.txt")
     fileLines_string = file.readlines()
 
     output = []

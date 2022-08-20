@@ -32,7 +32,7 @@ Using this new interpretation of the commands, calculate the horizontal position
 
 
 def ImportFile():
-    file = open("Day2Input")
+    file = open("Day2/input.txt")
     fileLines_string = file.readlines()
 
     output = []
